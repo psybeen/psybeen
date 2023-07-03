@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+import click
+import subprocess
+from pyfiglet import Figlet
+from termcolor import colored
+
+
+scan_commands = [
+    "nmap -sU {target_ip}",  # UDP scan
+    "nmap -sV {target_ip}",  # Version detection
+    "nmap -A {target_ip}",  # Aggressive scan
+    "nmap --script smb-os-discovery.nse -p445 {target_ip}",  # SMB OS discovery
+    "nmap -sS -T4 -p 1-65535 -A -v {target_ip}",  # Comprehensive scan with OS detection
+    "nmap -p 80 --script http-enum {target_ip}",  # HTTP enumeration
+    "nmap -p 443 --script ssl-enum-ciphers {target_ip}",  # SSL/TLS enumeration
+    "nmap -p 22 --script ssh-brute {target_ip}",  # SSH brute force
+    "nmap -p 22 --script ssh2-enum-algos {target_ip}",  # SSH algorithm enumeration
+    "nmap -p 22 --script ssh2-enum-ciphers {target_ip}",  # SSH cipher enumeration
+    "nmap -p 22 --script ssh2-enum-protocols {target_ip}",  # SSH protocol enumeration
+    "nmap -p 22 --script ssh2-enum-services {target_ip}",  # SSH service enumeration
+    "nmap -p 22 --script ssh2-enum-users {target_ip}",  # SSH user enumeration
+    "nmap -p 22 --script ssh2-enum-vulns {target_ip}",  # SSH vulnerability enumeration
+    "nmap -p 22 --script ssh2-enum-ports {target_ip}",  # SSH port enumeration
+]
+
+
+@click.group()
+def cli_group():
+    """CLI group for scan commands."""
+    pass
+
+
+def get_command(command_num, target_ip):
+    if 1 <= command_num <= len(scan_commands):
+        return scan_commands[command_num - 1].format(target_ip=target_ip)
+    else:
+        return None
+
+
+@cli_group.command()
+@click.option("--target-ip", prompt="Enter the target IP")
+def list_commands(target_ip):
+    """List all available commands."""
+    f = Figlet(font="slant")
+    click.echo(colored(f.renderText("Nmap Scan"), "magenta"))
+    click.echo("Available commands:")
+    for i, command in enumerate(scan_commands, start=1):
+        click.echo(f"{i}: {command}")
+
+    command_num = click.prompt("Enter the command number", type=int)
+    command = get_command(command_num, target_ip)
+    if command is not None:
+        click.echo(f"Running command: {command}")
+        try:
+            output = subprocess.check_output(command, shell=True, text=True)
+            click.echo(output)
+        except subprocess.CalledProcessError as e:
+            click.echo(f"Error executing command: {e}")
+    else:
+        click.echo("Invalid command number!")
+
+
+cli_group.add_command(list_commands)
+
+
+if __name__ == "__main__":
+    cli_group()
