@@ -1,71 +1,58 @@
-# scriptpacks README
+lazyscripts
 
-This is the README for your extension "scriptpacks". After writing up a brief description, we recommend including the following sections.
+License
+Description
 
-## Features
+Welcome to the lazycript! This script is designed to simplify and automate various tasks, making your life easier and more productive. It combines powerful features with a user-friendly interface to provide a seamless experience.
+Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
+Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+    Clone the repository: git clone https://github.com/your-username/awesome-script.git
+    Navigate to the project directory: cd awesome-script
+    Install the required dependencies: pip install -r requirements.txt
+    Run the script: python script.py
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Usage
 
-## Requirements
+    Run the script: Execute python lazynmap.py to start the script.
+    Follow the on-screen instructions: The script will guide you through the process.
+    Enjoy the automation: Sit back and let the script do its magic!
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Examples
 
-## Extension Settings
+Here are some examples of how to use the script for common tasks:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+bash
 
-For example:
+# Example 1: Describe the purpose of this example
 
-This extension contributes the following settings:
+python lazyscript.py list-commands
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
-## Known Issues
+Contributing
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
 
-## Release Notes
+    Fork the repository.
+    Create a new branch: git checkout -b feature/your-feature-name.
+    Commit your changes: git commit -am 'Add some feature'.
+    Push to the branch: git push origin feature/your-feature-name.
+    Submit a pull request.
 
-Users appreciate release notes as you update your extension.
+Please make sure to update tests as appropriate.
 
-### 1.0.0
+License
 
-Initial release of ...
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### 1.0.1
 
-Fixed issue #.
+Contact
 
-### 1.1.0
+For any questions or feedback, please feel free to reach out:
 
-Added features X, Y, and Z.
+    Email: psybeen@duck.com
+    Twitter: ain't have it
 
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+i appreciate your support and hope you find this script useful!
