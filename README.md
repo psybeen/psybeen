@@ -1,5 +1,4 @@
 ```yaml
-* lazyscripts
 Hi! i'm psybeen
 just a lazy person *blush*
 enjoy your stay :) *
