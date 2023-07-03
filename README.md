@@ -1,6 +1,10 @@
 <h1 align="center">Hi 👋, I'm psybeen</h1>
 <h3 align="center">"Embarking on a journey of learning is like stepping into a whimsical wonderland, where knowledge blooms like vibrant flowers and curiosity dances in the air. With each new concept and skill you embrace, you paint a colorful mosaic of personal growth. Like a curious kitten, you explore the vast realms of wisdom, eagerly unraveling the mysteries of the world. Let your passion guide you, and let each lesson be a stepping stone on your path to greatness. Embrace the joy of learning, and remember that the pursuit of knowledge is a delightful adventure that will fill your heart with joy and your mind with endless possibilities."</h3>
 
+
+
+
+
 - 🔭 I’m currently working on [lazyscripts *blush*](https://github.com/psybeen/psybeen)
 
 - 🤯 I’m currently learning **CFPTS , CFBBH, coding 🙈**
