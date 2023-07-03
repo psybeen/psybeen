@@ -3,7 +3,12 @@ Hi! i'm psybeen
 just a lazy person *blush*
 enjoy your stay :) *
 ```
-
+<h2> 🚀 &nbsp;"Embarking on a journey of learning is like stepping into a whimsical wonderland, where knowledge blooms like vibrant flowers and curiosity dances in the air. With each new concept and skill you embrace, you paint a colorful mosaic of personal growth. Like a curious kitten, you explore the vast realms of wisdom, eagerly unraveling the mysteries of the world. Let your passion guide you, and let each lesson be a stepping stone on your path to greatness. Embrace the joy of learning, and remember that the pursuit of knowledge is a delightful adventure that will fill your heart with joy and your mind with endless possibilities."</h2>
+<p align="left">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="bash" width="45" height="45"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="45" height="45"/>
+</p>
 
 
 
