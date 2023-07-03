@@ -9,10 +9,17 @@ Features
 
 Installation
 
-    Clone the repository: git clone https://github.com/your-username/awesome-script.git
-    Navigate to the project directory: cd awesome-script
+    Clone the repository: git clone https://github.com/paybeen/psybeen.git
+    Navigate to the project directory: cd psybeen
     Install the required dependencies: pip install -r requirements.txt
-    Run the script: python script.py
+    Run the script: python lazynmap.py
+
+    --------------------------------------------------------------------------
+    chmod +x lazynmap.py
+    mv lazynmap.py ~/bin/lazynmap
+    export PATH="$HOME/bin:$PATH"
+    source ~/.bashrc
+     
 
 Usage
 
