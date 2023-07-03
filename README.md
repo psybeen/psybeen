@@ -33,9 +33,10 @@ Here are some examples of how to use the script for common tasks:
 
 bash
 
-# Example 1: Describe the purpose of this example
+# Example 1
 
-python lazyscript.py list-commands
+python lazynmap.py list-commands
+lazynmap
 
 
 Contributing
