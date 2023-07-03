@@ -1,21 +1,30 @@
-```yaml
-Hi! i'm psybeen
-just a lazy person *blush*
-enjoy your stay :) *
-```
-<h2> 🚀 &nbsp;"Embarking on a journey of learning is like stepping into a whimsical wonderland, where knowledge blooms like vibrant flowers and curiosity dances in the air. With each new concept and skill you embrace, you paint a colorful mosaic of personal growth. Like a curious kitten, you explore the vast realms of wisdom, eagerly unraveling the mysteries of the world. Let your passion guide you, and let each lesson be a stepping stone on your path to greatness. Embrace the joy of learning, and remember that the pursuit of knowledge is a delightful adventure that will fill your heart with joy and your mind with endless possibilities."</h2>
+<h1 align="center">Hi 👋, I'm psybeen</h1>
+<h3 align="center">"Embarking on a journey of learning is like stepping into a whimsical wonderland, where knowledge blooms like vibrant flowers and curiosity dances in the air. With each new concept and skill you embrace, you paint a colorful mosaic of personal growth. Like a curious kitten, you explore the vast realms of wisdom, eagerly unraveling the mysteries of the world. Let your passion guide you, and let each lesson be a stepping stone on your path to greatness. Embrace the joy of learning, and remember that the pursuit of knowledge is a delightful adventure that will fill your heart with joy and your mind with endless possibilities."</h3>
+
+- 🔭 I’m currently working on [lazyscripts *blush*](https://github.com/psybeen/psybeen)
+
+- 🤯 I’m currently learning **CFPTS , CFBBH, coding 🙈**
+
+- 👨‍💻 All of my projects are available at [have non ☹️](have non ☹️)
+
+- i'm usally some where in the mountains [🌄](🌄)
+
+- 💬 Ask me about **everything...? 🤗**
+
+- 📫 How to reach me **psybeen@duck.com**
+
+- 📄 Know about my experiences [still learning🤐](still learning🤐)
+
+- ⚡ Fun fact **YDINS 🕉️**
+
+<h3 align="left">Connect with me:</h3>
 <p align="left">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="bash" width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg" alt="adonisjs"width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg" alt="apache"width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg" alt="atom"width="45" height="45"/>
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python"width="45" height="45"/>
-          
-          
-          
 </p>
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://grafana.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a> </p>
+
+
 
 
 
