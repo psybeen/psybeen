@@ -42,8 +42,11 @@
 License
 Description
 
+Pre-Alpha 0.1
+
 Welcome to the lazycript! This script is designed to simplify and automate various tasks, making your life easier and more productive. It combines powerful features with a user-friendly interface to provide a seamless experience.
 Features
+
 
 
 Installation
