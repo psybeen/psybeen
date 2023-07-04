@@ -5,25 +5,36 @@ from pyfiglet import Figlet
 from termcolor import colored
 
 
+
+
+
+
+#nmap section
 scan_commands = [
+    
+    #scansection
     "nmap -sU {target_ip}",  # UDP scan
     "nmap -sV {target_ip}",  # Version detection
+    "nmap -sT {target_ip}",  # TCP scan
     "nmap -A {target_ip}",  # Aggressive scan
-    "nmap --script smb-os-discovery.nse -p445 {target_ip}",  # SMB OS discovery
     "nmap -sS -T4 -p 1-65535 -A -v {target_ip}",  # Comprehensive scan with OS detection
+    
+    
+    #scriptsection
+    "nmap --script smb-os-discovery.nse -p445 {target_ip}",  # SMB OS discovery
     "nmap -p 80 --script http-enum {target_ip}",  # HTTP enumeration
-    "nmap -p 443 --script ssl-enum-ciphers {target_ip}",  # SSL/TLS enumeration
-    "nmap -p 22 --script ssh-brute {target_ip}",  # SSH brute force
-    "nmap -p 22 --script ssh2-enum-algos {target_ip}",  # SSH algorithm enumeration
-    "nmap -p 22 --script ssh2-enum-ciphers {target_ip}",  # SSH cipher enumeration
-    "nmap -p 22 --script ssh2-enum-protocols {target_ip}",  # SSH protocol enumeration
-    "nmap -p 22 --script ssh2-enum-services {target_ip}",  # SSH service enumeration
-    "nmap -p 22 --script ssh2-enum-users {target_ip}",  # SSH user enumeration
-    "nmap -p 22 --script ssh2-enum-vulns {target_ip}",  # SSH vulnerability enumeration
-    "nmap -p 22 --script ssh2-enum-ports {target_ip}",  # SSH port enumeration
+    "nmap -p 443 --script https-enum {target_ip}",  # HTTPS enumeration
+    "nmap -p 21 --script ftp-enum {target_ip}",  # FTP enumeration 
+    "nmap -p 22 --script ssh-enum {target_ip}",  # SSH enumeration
+    "nmap -p 23 --script telnet-enum {target_ip}",  # Telnet enumeration
+    "nmap -p 25 --script smtp-enum {target_ip}",  # SMTP enumeration
+    "nmap -p 53 --script dns-enum {target_ip}",  # DNS enumeration
+    "nmap -p 110 --script pop3-enum {target_ip}",  # POP3 enumeration
+    "nmap -p 143 --script imap-enum {target_ip}",  # IMAP enumeration
+    
 ]
 
-
+#toolssection 
 @click.group()
 def cli_group():
     """CLI group for scan commands."""
@@ -38,11 +49,11 @@ def get_command(command_num, target_ip):
 
 
 @cli_group.command()
-@click.option("--target-ip", prompt="Enter the target IP")
+@click.option("--target-ip", prompt="Enter the target IP fagoott!")
 def list_commands(target_ip):
     """List all available commands."""
     f = Figlet(font="slant")
-    click.echo(colored(f.renderText("Nmap Scan"), "magenta"))
+    click.echo(colored(f.renderText("lazybeen pre-alpha 0.1"), "red"))
     click.echo("Available commands:")
     for i, command in enumerate(scan_commands, start=1):
         click.echo(f"{i}: {command}")
@@ -61,6 +72,63 @@ def list_commands(target_ip):
 
 
 cli_group.add_command(list_commands)
+
+
+
+
+
+
+#Menu section
+def display_menu(title, options):
+    click.echo(colored(f"==== {title} ====", "cyan"))
+    for i, option in enumerate(options, start=1):
+        click.echo(f"{i}: {option}")
+    choice = click.prompt("Enter your choice", type=int)
+    return choice
+
+
+
+@cli_group.command()
+def main_menu():
+    """Display the main menu."""
+    while True:
+        f = Figlet(font="slant")
+        click.echo(colored(f.renderText("yggdrasil"), "red"))
+        click.echo(colored("prealpha by psybeen", "green", attrs=["bold"]))
+
+
+        direction_menu = ["nmap scans", "Exit"]
+        direction_choice = display_menu("Main Menu", direction_menu)
+
+        if direction_choice == 1:
+            command_menu = ["List Commands", "Back"]
+            command_choice = display_menu("nmap scans", command_menu)
+
+            if command_choice == 1:
+                click.echo("Available commands:")
+                for i, command in enumerate(scan_commands, start=1):
+                    click.echo(f"{i}: {command}")
+
+                command_num = click.prompt("Enter the command number", type=int)
+                if 1 <= command_num <= len(scan_commands):
+                    target_ip = click.prompt("Enter the target IP")
+                    command = scan_commands[command_num - 1].format(target_ip=target_ip)
+                    click.echo(f"Running command: {command}")
+                    try:
+                        output = subprocess.check_output(command, shell=True, text=True)
+                        click.echo(output)
+                    except subprocess.CalledProcessError as e:
+                        click.echo(f"Error executing command: {e}")
+                else:
+                    click.echo("Invalid command number!")
+            elif command_choice == 2:
+                continue
+            else:
+                click.echo("Invalid choice!")
+        elif direction_choice == 2:
+            break
+        else:
+            click.echo("Invalid choice!")
 
 
 if __name__ == "__main__":
