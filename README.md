@@ -65,16 +65,9 @@ Installation
 
 Usage
 
-    Run the script: Execute python lazynmap.py to start the script.
-    Follow the on-screen instructions: The script will guide you through the process.
-    Enjoy the automation: Sit back and let the script do its magic!
+    lazynmap main-menu
 
 
-
-# Example 1
-
-python lazynmap.py list-commands
-lazynmap list-commands
 
 
 Contributing
