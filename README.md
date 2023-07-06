@@ -57,8 +57,8 @@ Installation
 
     --------------------------------------------------------------------------
     chmod +x lazyscript
-    mv lazyscript ~/bin/lazyscript
-    export PATH="$HOME/bin:$PATH"
+    mv lazyscript ~/usr/bin/
+    export PATH="$HOME/usr/bin:$PATH"
     source ~/.bashrc
 
 
