@@ -53,12 +53,11 @@ Installation
 
     Clone the repository: git clone https://github.com/paybeen/psybeen.git
     Navigate to the project directory: cd psybeen
-    Install the required dependencies: pip install -r requirements.txt
-    Run the script: python lazyscript.py
+
 
     --------------------------------------------------------------------------
-    chmod +x lazyscript.py
-    mv lazyscript.py ~/bin/lazyscript
+    chmod +x lazyscript
+    mv lazyscript ~/bin/lazyscript
     export PATH="$HOME/bin:$PATH"
     source ~/.bashrc
 
